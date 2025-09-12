@@ -11,7 +11,7 @@ export default function News() {
     <section className="py-10 md:py-16 bg-white">
       <div className="container-narrow">
         <h2 className="text-xl md:text-3xl font-extrabold">Berita Alumni</h2>
-        <p className="text-gray-600 mt-1">Sorotan kegiatan terbaru dan inisiatif alumnus.</p>
+        <p className="text-gray-600 mt-1">Sorotan kabar dan aktivitas dari para alumni.</p>
 
         <div className="grid md:grid-cols-3 gap-4 md:gap-6 mt-6">
           {items.map((it) => (
