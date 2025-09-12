@@ -20,8 +20,8 @@ export default function Hero() {
             Jelajahi profil alumni, update kegiatan, dan kolaborasi dalam gerakan kebaikan.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a href="https://eduaction.co.id/katalog-alumni/" className="btn btn-primary">Lihat Katalog Alumni</a>
-            <a href="https://eduaction.co.id/berita-alumni/" className="btn btn-ghost">Baca Berita</a>
+            <a href="https://catalog-alumnidd.netlify.app/" className="btn btn-primary">Lihat Katalog Alumni</a>
+            <a href="https://news-alumnidd.netlify.app/" className="btn btn-ghost">Baca Berita</a>
           </div>
         </div>
 
