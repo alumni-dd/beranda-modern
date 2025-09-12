@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens & utility compositions */
+.container-narrow { @apply max-w-6xl mx-auto px-4; }
+.card { @apply bg-white rounded-2xl shadow-sm border border-gray-100; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold border transition; }
+.btn-primary { @apply bg-emerald-600 text-white border-emerald-700 hover:bg-emerald-700; }
+.btn-ghost { @apply bg-white text-gray-700 border-gray-200 hover:bg-gray-50; }
+.badge { @apply inline-flex items-center rounded-full border px-2 py-0.5 text-xs; }
+
+.stat-card { @apply bg-slate-50 rounded-2xl p-3 shadow-sm; }
+.metric { @apply bg-white rounded-2xl p-4 shadow-sm border border-gray-100; }
+.metric-label { @apply text-gray-500 text-sm; }
+.metric-value { @apply text-2xl font-extrabold text-emerald-900; }
+
+.feature-card { @apply bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-card transition; }
+.berita-card { @apply bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lift transition; }
+.berita-image { @apply w-full h-40 object-cover; }
+.berita-title { @apply font-bold mb-1; }
+.berita-desc { @apply text-gray-600 text-sm mb-2; }
+.berita-link { @apply text-emerald-700 font-semibold text-sm; }
+
+.sticky-header { position: sticky; top: 0; z-index: 50; }
