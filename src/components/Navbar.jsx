@@ -4,7 +4,6 @@ import { Menu } from "lucide-react";
 
 // Bisa override via .env kalau perlu
 const HOME_URL   = import.meta.env.VITE_HOME_URL   || (typeof window !== "undefined" ? window.location.origin + "/" : "/");
-const DATA_URL   = import.meta.env.VITE_DATA_URL   || "https://data-alumnidd.netlify.app/";
 const NEWS_URL   = import.meta.env.VITE_NEWS_URL   || "https://news-alumnidd.netlify.app/";
 const TRACER_URL = import.meta.env.VITE_TRACER_URL || "https://tracer-alumnidd.netlify.app/";
 const KATALOG_URL = import.meta.env.VITE_KATALOG_URL || "https://catalog-alumnidd.netlify.app/";
@@ -57,7 +56,6 @@ export default function Navbar() {
         {/* NAV desktop (pakai <a>, bukan NavLink) */}
         <nav className="hidden md:flex items-center gap-2">
           <a href={HOME_URL}   className={linkClass(HOME_URL)}>Beranda</a>
-          <a href={DATA_URL}   className={linkClass(DATA_URL)}>Database</a>
           <a href={KATALOG_URL} className={linkClass(KATALOG_URL)}>Katalog</a>
           <a href={NEWS_URL}   className={linkClass(NEWS_URL)}>Berita</a>
           <a href={TRACER_URL} className={linkClass(TRACER_URL)}>Tracer</a>
@@ -80,7 +78,6 @@ export default function Navbar() {
         <div id="mobile-menu" className="md:hidden border-t border-slate-200 bg-white">
           <div className="max-w-6xl mx-auto px-4 py-2 flex flex-col gap-1">
             <a href={HOME_URL}    className={linkClass(HOME_URL)} onClick={() => setOpen(false)}>Beranda</a>
-            <a href={DATA_URL}    className={linkClass(DATA_URL)} onClick={() => setOpen(false)}>Database</a>
             <a href={KATALOG_URL} className={linkClass(KATALOG_URL)} onClick={() => setOpen(false)}>Katalog</a>
             <a href={NEWS_URL}    className={linkClass(NEWS_URL)} onClick={() => setOpen(false)}>Berita</a>
             <a href={TRACER_URL}  className={linkClass(TRACER_URL)} onClick={() => setOpen(false)}>Tracer</a>
